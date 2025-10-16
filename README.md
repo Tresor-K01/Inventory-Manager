@@ -35,7 +35,7 @@ Para rodar este projeto em seu ambiente local, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone 
+    git clone: https://github.com/Tresor-K01/Inventory-Manager
     ```
 2.  **Compile as Classes:**
     Navegue até o diretório `InventoryManager` e compile os arquivos `.java`:
