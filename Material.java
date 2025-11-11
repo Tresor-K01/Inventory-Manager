@@ -8,7 +8,7 @@ class Material {
         this.custoUnitario = custoUnitario;
         this.quantidade = quantidade;
     }
-
+ 
     public String getTipo() { return tipo; }
     public double getCustoUnitario() { return custoUnitario; }
     public double getQuantidade() { return quantidade; }
