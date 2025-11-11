@@ -1,62 +1,59 @@
-# Sistema de Gestão de Estoque e Custos
 
-> Meu primeiro projeto pessoal em Java, desenvolvido para aplicar os conceitos de Programação Orientada a Objetos (POO) e estruturas de dados.
+# Gerenciamento de Estoque de Móveis (Inventory Manager)
 
-## Sobre o Projeto
-
-Este projeto é um sistema de console (CLI) para auxiliar no gerenciamento de estoque de materiais e no cálculo de custo de produção de móveis.
-
-A aplicação permite que o usuário cadastre novos materiais, consulte o estoque disponível e, o mais importante, defina a composição de um novo produto (Móvel) para calcular automaticamente seu preço final com base no custo unitário dos materiais utilizados.
-
-O sistema simula um fluxo de produção simples, ideal para pequenas marcenarias ou produções artesanais.
+Um sistema simples de linha de comando (CLI) desenvolvido em Java para gerenciar materiais de estoque, cadastrar móveis e calcular seus custos de produção e preço final.
 
 ## Funcionalidades
 
-O sistema oferece as seguintes opções no menu principal:
+O sistema permite realizar as seguintes operações através de um menu interativo:
 
-1.  **Cadastrar Materiais:** Adiciona novos tipos de materiais (ex: madeira, tinta, cola) ao estoque, com seu custo unitário e quantidade inicial.
-2.  **Checagem e Busca de Materiais:** Permite visualizar a lista completa de materiais em estoque e buscar um item específico pelo nome.
-3.  **Atualização de Materiais:** Ajusta a quantidade de um material existente (simulando uma compra de novo estoque ou uma perda).
-4.  **Criar um Novo Móvel:** Define um novo produto, especificando o tempo de produção e os materiais (com suas respectivas quantidades) que serão consumidos para sua fabricação.
-5.  **Cálculo do Preço Final:** Calcula o custo total de um produto com base nos materiais cadastrados e usados na composição.
-6.  **Gerar Relatório Final:** Exporta um arquivo contendo um resumo da produção, o custo total dos materiais e o tempo total de execução do programa (simulando o tempo de produção).
+* **Cadastrar Materiais:** Adicionar novos materiais ao estoque (tipo, custo unitário e quantidade inicial).
+* **Listar Materiais:** Exibir todos os materiais atualmente em estoque.
+* **Buscar e Atualizar Material:** Encontrar um material pelo tipo e modificar seu custo ou adicionar quantidade.
+* **Cadastrar Móveis:** Registrar um novo móvel, especificando os materiais necessários (e reduzindo a quantidade do estoque) e o tempo de produção.
+* **Calcular Preço Final:** Calcula o preço final de venda de um móvel com base no custo dos materiais, mão de obra (R$10/hora) e custos indiretos (15%).
+* **Relatórios:**
+    * `relatorio.txt`: Salva o registro de movimentação de materiais usados nos cálculos de preço.
+    * `Relatorio_Final.txt`: Gera um relatório final com o custo total do estoque e a duração do uso do sistema.
 
 ## Tecnologias Utilizadas
 
-* **Linguagem:** Java
-* **Conceitos:**
-    * Programação Orientada a Objetos (POO) - Uso de classes (`Material`, `Movel`) com métodos, atributos e encapsulamento.
-    * Estruturas de Dados Dinâmicas (`ArrayList` para listas de materiais e produtos, `HashMap/Map` para mapear materiais em cada produto).
-    * Manipulação de I/O (Entrada/Saída) - Uso da classe `Scanner` para interação no console e `FileWriter`/`PrintWriter` para gerar o relatório em arquivo.
+* **Linguagem de Programação:** Java
+* **Estrutura de Dados:** `ArrayList` para listas de materiais e móveis, `HashMap` para armazenar materiais em móveis.
+* **I/O:** `Scanner` para entrada de dados e `PrintWriter`/`FileWriter` para geração de relatórios em arquivo.
 
 ## Como Executar o Projeto
 
-Para rodar este projeto em seu ambiente local, siga os passos abaixo:
+Para rodar este projeto na sua máquina, siga os passos abaixo:
 
-1.  **Clone o repositório:**
+### Pré-requisitos
+
+Certifique-se de ter o **Java Development Kit (JDK) 8** ou superior instalado.
+
+### Compilação e Execução
+
+1.  **Navegue** até o diretório raiz do projeto no seu terminal.
+2.  **Compile** os arquivos `.java`:
     ```bash
-    git clone: https://github.com/Tresor-K01/Inventory-Manager
+    javac Main.java Estoque.java Material.java Movel.java Relatorio.java
     ```
-2.  **Compile as Classes:**
-    Navegue até o diretório `InventoryManager` e compile os arquivos `.java`:
+3.  **Execute** o programa principal:
     ```bash
-    javac Material.java Movel.java cadastroMateriais.java
-    ```
-3.  **Execute o Programa:**
-    Inicie a aplicação através da classe principal:
-    ```bash
-    java cadastroMateriais
+    java Main
     ```
 
-## Próximos Passos e Melhorias
+O menu principal será exibido, permitindo que você interaja com o sistema.
 
-* [ ] Implementar persistência de dados (salvar e carregar listas de materiais e produtos em arquivos de texto ou banco de dados) para que os dados não sejam perdidos ao encerrar o programa.
-* [ ] Adicionar uma interface gráfica simples (GUI) usando Swing ou JavaFX.
+##  Estrutura do Projeto
 
+O projeto é composto pelas seguintes classes:
 
-Conecte-se comigo!
-
-| **LinkedIn** | https://www.linkedin.com/in/kitsari/ |
-| **Email** | tresorkitsari@exemplo.com |
+* `Main.java`: Contém o loop principal do programa e o menu de interação.
+* `Estoque.java`: Gerencia as listas de `Material` e `Movel` e implementa a maior parte da lógica de negócios (cadastro, busca, atualização e cálculo).
+* `Material.java`: Define a estrutura dos materiais (tipo, custo unitário, quantidade).
+* `Movel.java`: Define a estrutura dos móveis (nome, tempo de produção, preço final) e calcula o custo.
+* `Relatorio.java`: Contém métodos estáticos para salvar logs de movimentação e gerar o relatório final de custos.
 
 ---
+
+Este README é uma documentação viva. Fique à vontade para expandi-lo com detalhes específicos sobre a lógica de cálculo ou novos recursos!
