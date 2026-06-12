@@ -1,0 +1,11 @@
+com\inventory\GestaoMaterias\Service\CadastrarMateriasService.class
+com\inventory\GestaoMaterias\Model\TipoMaterial.class
+com\inventory\GestaoMaterias\Model\TipoMovel.class
+com\inventory\GestaoMaterias\Repository\IMoveisRepository.class
+com\inventory\GestaoMaterias\DTO\Response\CadastroResponse.class
+com\inventory\GestaoMaterias\Repository\ICadastroRepository.class
+com\inventory\GestaoMaterias\GestaoMateriasApplication.class
+com\inventory\GestaoMaterias\DTO\Request\CadastrarMateriasRequest.class
+com\inventory\GestaoMaterias\Model\Moveis.class
+com\inventory\GestaoMaterias\Model\CadastroMaterias.class
+com\inventory\GestaoMaterias\Controllers\CadastroMaterialController.class

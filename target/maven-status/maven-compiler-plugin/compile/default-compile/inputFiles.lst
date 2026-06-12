@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Controllers\CadastroMaterialController.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\DTO\Request\CadastrarMateriasRequest.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\DTO\Response\CadastroResponse.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\GestaoMateriasApplication.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Model\CadastroMaterias.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Model\Moveis.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Model\TipoMaterial.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Model\TipoMovel.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Repository\ICadastroRepository.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Repository\IMoveisRepository.java
+C:\Users\DELL\Documents\Inventory-Manager\src\main\java\com\inventory\GestaoMaterias\Service\CadastrarMateriasService.java
